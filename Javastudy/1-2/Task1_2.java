@@ -33,7 +33,7 @@ public class Task1_2 {
         int[] intArray = { 10, 20, 30, 40, 50 };
 
         // ⑥下記の処理について、何をしているのかコメントを記入してください。
-        // [配列intArrayの４の要素の値を表示]
+        // [配列intArray1と4の要素を足している]
         System.out.println(intArray[1] + intArray[4]);
 
     }
