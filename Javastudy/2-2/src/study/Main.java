@@ -21,6 +21,6 @@ public class Main {
 
         // ② ①のインスタンス変数より、アカウント情報をコンソール出力するメソッドを呼び出しなさい。
     	
-    	account.printAccountInfo(null, 0, null);
-    }
+    	account.printAccountInfo();
+    	}
 }
