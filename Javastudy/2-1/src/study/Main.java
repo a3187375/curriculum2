@@ -18,7 +18,7 @@ public class Main {
     	String firstName = "Airi";
     	String lastName = "Mori";
 
-        //getName関数の呼び出しと出力
+       //getName関数の呼び出しと出力
         System.out.println (getName(firstName, lastName));
         System.out.println();
 
@@ -28,14 +28,14 @@ public class Main {
         //   要素が奇数の場合には「nは奇数です。」と出力されます。
 
        for(int n= 0; n < arr.length; n++) {
-    	   isOdd(n);
+    	   isOdd(arr[0][1][2]);
        }
        	
     }
 
 
 	//② 関数を定義しなさい。
-    //   関数名：getName
+    //   関数名：getNam
     //  修飾子：public
     //   引数には①で定義したfirstNameとlastNameを引数で受け取り、
     //  last_name と first_name を連結した値を返り値とする変数を定義しなさい。
