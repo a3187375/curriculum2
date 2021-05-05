@@ -29,7 +29,7 @@ public class Study {
     	shohinList.add(SHOP_SHOHIN_03);
         // ② 以下の「shopMap.put(shohinList.get(1), 180);」の処理について、コメントを記述してください。
         /*
-         * [牛乳は180円]
+         * {shohinList.get(1)は牛乳を指し、180は牛乳の値段を指す。]
          *
          */
         LinkedHashMap<String, Integer> shopMap = new LinkedHashMap<String, Integer>();
