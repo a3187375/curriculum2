@@ -11,6 +11,8 @@ public class Check {
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
 		
+		printName(firstName, lastName);
+		
 		Pet pet = new Pet(Constants.CHECK_CLASS_JAVA,Constants.CHECK_CLASS_HOGE);
 		pet.introduce();
 		
