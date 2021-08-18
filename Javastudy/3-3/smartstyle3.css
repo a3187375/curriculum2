@@ -1,0 +1,14 @@
+@media screen and(max-479px){
+    .header{
+        width: 200px;
+    }
+    .flexbox{
+        display: block;
+    }
+    .box1{
+        margin: 10px 70px;
+    }
+    .box4{
+        margin: 20px 30px;
+    }
+}
