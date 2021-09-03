@@ -1,9 +1,14 @@
-@media screen and(max-479px){
+@media screen and(max-width: 479px){
     .header{
-        width: 200px;
+        max-width: 200px;
+        width: 100%;
     }
-    .flexbox{
+    .boxcontainer{
         display: block;
+        margin: auto;
+    }
+    .main.left{
+        width: 200px;
     }
     .box1{
         margin: 10px 70px;
