@@ -9,9 +9,7 @@
 
 <body>
 <!-- フッターを作成 -->
-<div class="footer">
-	<p>hoge.Inc</p>
-</div>
+<div class="footer">hoge.Inc</div>
 <style>
 	div.footer{
 	background-color: gray;
