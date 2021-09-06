@@ -7,15 +7,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 </head>
-<!-- // div
-background-color: gray;
-// label
-display: inline-block;
-padding: 10px;
-color: white;
-// label
-padding: 10px;
-font-size: 10px;-->
 <body>
 <div>
 <div class="header">login　　　<span><%Date date= new Date();
@@ -23,18 +14,5 @@ font-size: 10px;-->
 	String formatDate = sdf.format(date);
 	out.print(formatDate);%></span></div>
 </div>
-<style>
-div.header{
-background-color: gray;
-// label
-display: inline-block;
-padding: 10px;
-color: white;
-font-size: 10px;
-}
-span{
-color: black;
-}
-</style>
 </body>
 </html>

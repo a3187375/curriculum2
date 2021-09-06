@@ -10,14 +10,5 @@
 <body>
 <!-- フッターを作成 -->
 <div class="footer">hoge.Inc</div>
-<style>
-	div.footer{
-	background-color: gray;
-	// label
-	display: inline-block;
-	padding: 10px;
-	color: white;
-	}
-</style>
 </body>
 </html>

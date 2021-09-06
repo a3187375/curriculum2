@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="<%=request.getContextPath() %>/css/style.css">
 <title>Insert title here</title>
 </head>
 <body>
@@ -13,7 +14,7 @@ padding-bottom: 50px;
 -->
 <!-- name、idの入力エリアを作成しなさい -->
 <%@include file ="header.jsp" %>
-<div>
+<div class="main">
 	<table>
 	<tr>
 	<th>name</th>
@@ -26,12 +27,6 @@ padding-bottom: 50px;
 	</table>
 </div>
 <%@include file="footer.jsp"%>
-<style>
-div{
-padding-top: 50px;
-padding-bottom: 50px;
-}
-</style>
 </body>
 </html>
 
