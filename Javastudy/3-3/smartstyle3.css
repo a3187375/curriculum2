@@ -13,6 +13,7 @@
     }
     .right{
         width: 200px;
+        height: 210px;
     }
     .box1{
         margin: 10px 70px 0 70px;
@@ -23,8 +24,18 @@
     .box3{
         margin: 0px 70px 10px 70px;
     }
-    .box4.box5.box6{
-        margin: 20px 30px;
+    .box4{
+        margin: 20px 25px 10px 25px;
+        border: solid 5px #ffffff;
+    }
+    .box5{
+        margin: 10px 25px;
+        border: solid 5px #ffffff;
+    }
+    .box6{
+        margin: 10px 25px 20px 25px;
+        border: solid 5px #ffffff;
+
     }
     .footer{
         width: 200px;
