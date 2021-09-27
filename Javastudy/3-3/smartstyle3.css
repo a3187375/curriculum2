@@ -1,4 +1,7 @@
 @media screen and (max-width: 479px){
+    .wrapper{
+        max-width: 200px;
+    }
     .header{
         max-width: 200px;
         width: 100%;
@@ -25,15 +28,15 @@
         margin: 0px 70px 10px 70px;
     }
     .box4{
-        margin: 20px 25px 10px 25px;
+        margin: 20px 30px 10px 30px;
         border: solid 5px #ffffff;
     }
     .box5{
-        margin: 10px 25px;
+        margin: 10px 30px;
         border: solid 5px #ffffff;
     }
     .box6{
-        margin: 10px 25px 20px 25px;
+        margin: 10px 30px 20px 30px;
         border: solid 5px #ffffff;
 
     }
