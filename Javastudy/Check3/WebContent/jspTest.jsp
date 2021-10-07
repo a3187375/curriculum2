@@ -12,7 +12,10 @@
 padding-top: 50px;
 padding-bottom: 50px;
 -->
-<!-- name、idの入力エリアを作成しなさい -->
+<!-- name、idの入力エリアを作成しなさい div.main{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}-->
 <%@include file ="header.jsp" %>
 <div class="main">
 	<table>

@@ -9,9 +9,7 @@
 </head>
 <body>
 <div>
-<div class="header">
-<label>login　　　</label>
-<span><%Date date= new Date();
+<div class="header">login　　　<span><%Date date= new Date();
 	SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd");
 	String formatDate = sdf.format(date);
 	out.print(formatDate);%></span>
