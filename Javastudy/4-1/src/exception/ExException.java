@@ -109,7 +109,8 @@ public class ExException {
      * ルール2: 例外発生時に設定するメッセージは、定義済みの定数から適当なものを指定してください。
      */
     // ここへ記述
-    private static void NullSample {
+    private static void Null
+    Sample {
     	throw new NullPointerException(null);
     }
     /**
