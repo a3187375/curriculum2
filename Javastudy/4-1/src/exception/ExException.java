@@ -62,6 +62,7 @@ public class ExException {
                 switch (parameter) {
                     case CONST_EXCEPTION_TRIGER_NULL:
                     // 問①: 強制的に「NullPointerException」を発生させるメソッドを作成し、呼び出しなさい。
+                    String value = null;
                     String NullPoint = (String) CONST_MSG_NULLPO;
                     System.out.println(NullPoint);
                     // 問①は最下部にもあります。
@@ -71,8 +72,9 @@ public class ExException {
                     // 問②: 「throw」を使用せずに「ArrayIndexOutOfBoundsException」を発生させる処理を記述しなさい。
                     // Tips: ご自身で配列を準備してください（使用する配列の型、要素数は自由）
                     // ここへ記述
-                    String AryBnd=(String)CONST_COMMON_TASK_INPUT_NAME;
-                    System.out.println(AryBnd);
+                    int[] arrayBounds = {1,3,4};
+                    System.out.println(arrayBounds[6]);
+                    
                     break;
                    //3
                     case CONST_EXCEPTION_TRIGER_CAST:
@@ -109,8 +111,7 @@ public class ExException {
      * ルール2: 例外発生時に設定するメッセージは、定義済みの定数から適当なものを指定してください。
      */
     // ここへ記述
-    private static void Null
-    Sample {
+    private static void NullPoint() throws NullPointerException{
     	throw new NullPointerException(null);
     }
     /**
