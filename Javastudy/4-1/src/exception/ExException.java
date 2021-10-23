@@ -62,9 +62,7 @@ public class ExException {
                 switch (parameter) {
                     case CONST_EXCEPTION_TRIGER_NULL:
                     // 問①: 強制的に「NullPointerException」を発生させるメソッドを作成し、呼び出しなさい。
-                    String value = null;
-                    String NullPoint = (String) CONST_MSG_NULLPO;
-                    System.out.println(NullPoint);
+                    NullPoint();
                     // 問①は最下部にもあります。
                     // ルール: ここへ作成したメソッドを呼び出す
                     break;
