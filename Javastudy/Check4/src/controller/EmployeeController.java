@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import bean.EmployeeBean;
 import service.EmployeeService;
  
 public class EmployeeController extends HttpServlet {
@@ -32,9 +33,9 @@ public class EmployeeController extends HttpServlet {
   // 問② EmployeeServiceクラスをインスタンス化する。
  EmployeeService emps = new EmployeeService();
   // 問③ EmployeeBeanに、EmployeeServiceよりsearch関数を呼び出し、返り値を格納する。
- emps.search(id, password); //【メモ】インスタンス化.search関数（返したい値）
+ EmployeeBean rtnDate = emps.search("postgres","postgres"); //【メモ】EmployeeBean 任意の変数 = インスタンス化.search関数（返したい値）
   // 問④ nullの部分に適切な引数をセットする。
- request.setAttribute("EmployeeBean", id); //【メモ】第一引数が登録するデータの名前、第二引数に値
+ request.setAttribute("EmployeeBean", rtnDate); 
  
  } catch (Exception e) {
  e.printStackTrace();

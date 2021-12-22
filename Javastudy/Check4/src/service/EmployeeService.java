@@ -31,11 +31,11 @@ public class EmployeeService {
  
   // 問② 入力された値で、UPDATEする文
  /** ・SQL UPDATE文 */
- private static final String SQL_UPDATE = "UPDATE Employee_table SET id = ? , password = ? WHERE name=? , comment=? , login_time = ? ";
+ private static final String SQL_UPDATE = "UPDATE Employee_table SET id = '?'. password = '?' , '?' = to_char(current_timestamp , 'yyyy/MM/dd HH:mm:ss') WHERE name = 'nanaumishinya' AND comment = 'javaman' ";
  
   // 問③ 入力されたIDとPassWordをキーにして、検索するSELECT文
  /** ・SQL SELECT文 */
- private static final String SQL_SELECT = "SELECT * FROM Employee_table WHERE id=? , password=?  ";
+ private static final String SQL_SELECT = "SELECT * FROM Employee_table WHERE id='?' AND password='?'  ";
  
  EmployeeBean employeeDate = null;
  
