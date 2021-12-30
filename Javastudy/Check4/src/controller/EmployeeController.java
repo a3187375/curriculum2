@@ -1,4 +1,4 @@
-package controller;
+package controller; //メモ：controllerは中心的位置
  
 /**
  * 社員情報管理コントローラー
@@ -33,7 +33,7 @@ public class EmployeeController extends HttpServlet {
   // 問② EmployeeServiceクラスをインスタンス化する。
  EmployeeService emps = new EmployeeService();
   // 問③ EmployeeBeanに、EmployeeServiceよりsearch関数を呼び出し、返り値を格納する。
- EmployeeBean rtnDate = emps.search("postgres","postgres"); //【メモ】EmployeeBean 任意の変数 = インスタンス化.search関数（返したい値）
+ EmployeeBean rtnDate = emps.search("id","pass"); //【メモ】EmployeeBean 任意の変数 = インスタンス化.search関数（返したい値）
   // 問④ nullの部分に適切な引数をセットする。
  request.setAttribute("EmployeeBean", rtnDate); 
  

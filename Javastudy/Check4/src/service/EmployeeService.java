@@ -49,7 +49,7 @@ public class EmployeeService {
  
  try {
   // データベースに接続
- Class.forName(POSTGRES_DRIVER);
+ Class.forName(POSTGRES_DRIVER); 
  connection = DriverManager.getConnection(JDBC_CONNECTION, USER, PASS);
  statement = connection.createStatement();
  
