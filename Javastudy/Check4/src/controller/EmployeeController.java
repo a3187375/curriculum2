@@ -23,7 +23,7 @@ public class EmployeeController extends HttpServlet {
  try {
   // 問① index.htmlから送信されたIDとPassWordの値を取得できるように修正しましょう。
  String id = request.getParameter("id");
- String password = request.getParameter("pass");
+ String password = request.getParameter("password");
  
  /*
  * IDとPassWordと元に、社員情報を検索する関数の呼び出し、結果をJSPに渡す処理
@@ -33,7 +33,7 @@ public class EmployeeController extends HttpServlet {
   // 問② EmployeeServiceクラスをインスタンス化する。
  EmployeeService emps = new EmployeeService();
   // 問③ EmployeeBeanに、EmployeeServiceよりsearch関数を呼び出し、返り値を格納する。
- EmployeeBean rtnDate = emps.search("id","pass"); //【メモ】EmployeeBean 任意の変数 = インスタンス化.search関数（返したい値）
+ EmployeeBean rtnDate = emps.search(id,password); //【メモ】EmployeeBean 任意の変数 = インスタンス化.search関数（返したい値）
   // 問④ nullの部分に適切な引数をセットする。
  request.setAttribute("EmployeeBean", rtnDate); 
  
