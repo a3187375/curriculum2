@@ -54,6 +54,10 @@ public final class ResponseBean {
     }
 
     /**
+     * 
+     * 
+     * 
+     * 
      * @return int型のメッセージ
      */
     public int getRequestStaus() {

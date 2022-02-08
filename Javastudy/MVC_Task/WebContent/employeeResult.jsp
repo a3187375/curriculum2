@@ -1,3 +1,5 @@
+<%@page import="com.sun.org.apache.xerces.internal.impl.dv.ValidatedInfo"%>
+<%@page import="com.sun.javafx.fxml.expression.Expression"%>
 <%@page import="com.sun.corba.se.impl.protocol.giopmsgheaders.Message"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8;" pageEncoding="UTF-8"%>
 <%@ page import="java.util.Objects"%>
@@ -25,7 +27,7 @@
 
         // FIXME Step-2-1: リクエストよりレスポンスBeanを取得しなさい。
         // Tips: 正確な型（クラス）でキャストすること
-        responseBean = request.getParameter(requestStatus); //わからない
+        ResponseBean rb = (ResponseBean) request.getAttribute("responseBean");//わからない
         empResultList = responseBean.getEmplyeeBeanList();
         requestStatus = responseBean.getRequestStaus();
         message = responseBean.getMessage();
@@ -46,8 +48,8 @@
     <input id="hiddenDialog" type="hidden" value="<%=requestStatus == 2 ? message : ""%>"></input>
     <br>
     <% if (requestStatus < 2 && !message.isEmpty()) { %>
-        <!-- FIXME Step-2-2: 式（Expression）を用いてメッセージ（message）を表示しなさい。 --><!-- 済 -->
-        <p><%=message %></p>
+        <!-- FIXME Step-2-2: 式（Expression）を用いてメッセージ（message）を表示しなさい。 --><!--[airimemo] ResponceBean.javaかも -->
+        <p><%= message %></p>
     <% } %>
     <% if (!empResultList.isEmpty()) { %>
     <div class="div-table-list">
@@ -67,8 +69,8 @@
             <tr class="td-max-width td-last-btn td-last-checkbox">
                 <td class="td-marker"></td>
                 <!-- FIXME Step-2-3: 社員情報一覧に表示する内容を式（Expression）を用いて表示しなさい。 -->
-                <!-- Tips: ループにより取得したリスト内の社員情報Beanを使用すること --><!-- 疑問-->
-                <td id="empId"><% %></td>
+                <!-- Tips: ループにより取得したリスト内の社員情報Beanを使用すること --><!-- 一覧＝EmployeBean.java -->
+                <td id="empId"><%= emp.getEmpId() %></td>
                 <td title="<%=emp.getName()%>">氏名</td>
                 <td title="<%=emp.getMail()%>">メールアドレス</td>
                 <td title="<%=emp.getProgramingLanguage()%>">プログラミング言語</td>

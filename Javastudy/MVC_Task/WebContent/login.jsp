@@ -59,7 +59,7 @@
             }
             Logger.log(new Throwable(), "message = " + message);
         }
-    } catch (Exception e) {
+     }}} catch (Exception e) {
         Logger.log(new Throwable(), e);
     }
 %>
@@ -67,7 +67,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<!-- FIXME Step-1-1: login.jspに適用するcssファイルのリンクタグを記述しなさい。-->
+<!-- FIXME Step-1-1: login.jspに適用するcssファイルのリンクタグを記述しなさい。--><!-- 済 -->
 <!-- Tips1: common.css、login.cssの2つを適用-->
 <!-- Tips2: 適用するcssファイルのパスの書き方に注意 -->
 <link rel="stylesheet" type="text/css" href="project/css/common.css">
@@ -83,14 +83,14 @@
             <!-- FIXME Step-1-2: 以下の手順に沿って適当な処理を記述しなさい。 -->
             <!-- 1. エラー（message）表示時に使用するlabelタグの準備-->
             <!-- 2. class属性と、適用するスタイルの記述-->
-            <!-- Tips: common.cssより赤色の文字色を定義しているスタイルを確認 -->
-            <div class= "error-label">
-            	<label>該当する社員情報がありません。</label>
+            <!-- Tips: common.cssより赤色の文字色を定義しているスタイルを確認 --><!-- 済 -->
+            <div class ="error_label">
+            <label></label>
             </div>
             <br>
         <% } %>
         <!-- FIXME Step-1-3: actionに送信先URIを記述しなさい。 -->
-        <!-- Tips: 「/このプロジェクト/web.xmlに記述されているservlet-name」 -->
+        <!-- Tips: 「/このプロジェクト/web.xmlに記述されているservlet-name」 --><!-- 済 -->
         <form action="employee" method="post">
             <div class="div-input-flex-area">
                 <div>

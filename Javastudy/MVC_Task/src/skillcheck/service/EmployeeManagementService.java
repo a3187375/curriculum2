@@ -1,7 +1,5 @@
 package skillcheck.service;
 
-import java.beans.Statement;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
@@ -10,14 +8,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 
-import javax.sql.RowSetInternal;
-
-import org.apache.tomcat.jdbc.pool.interceptor.AbstractCreateStatementInterceptor;
-import org.w3c.dom.html.HTMLOptGroupElement;
-
-import com.sun.corba.se.pept.transport.Connection;
-
-import javafx.css.PseudoClass;
 // FIXME Step-5-1: 「EmployeeBean, ResponseBean, ConstMessage, ConstSQL, EmployeeDao, SC5Exception, Logger」をインポートしなさい。
 import skillcheck.bean.EmployeeBean;
 import skillcheck.bean.ResponseBean;
@@ -196,7 +186,7 @@ public final class EmployeeManagementService extends BaseService implements Empl
                 // FIXME Step-5-4: pEmployeeBeanListの「1件目の要素のみ」から社員情報を取得しなさい。
                 // Tips1: ループ文を使用すること（正解は複数パターンあります）
                 // Tips2: 格納先はローカル変数のempとすること
-                for(String emp : pEmployeeBeanList ) {
+                for(EmployeeBean emp : pEmployeeBeanList ) {
                 }
                 	
 
@@ -209,7 +199,7 @@ public final class EmployeeManagementService extends BaseService implements Empl
                     // 1. 上記で構築したSELECT文を引数にして、connectionよりプリペアードステートメントオブジェクトを作成
                     // 2. 1で作成したオブジェクトをpreparedStatementへ格納
                     // Tips: sbQueryは、sbQuery.toString()でStringへ変換
-                    String sql = "select from "
+                    String sql = "select from ";
                     PreparedStatement ps = connection.prepareStatement(sql);
                     
                     // LIKEを使用するため、パラメータを編集
@@ -219,7 +209,7 @@ public final class EmployeeManagementService extends BaseService implements Empl
 
                     // FIXME Step-5-6: preparedStatementに適切なパラメーターをセットしなさい。
                     // Tips: パラメータをセットするインデックスに注意
-                    ps.setString( , );
+                    ps.setString( 1, empId );
 
                     // FIXME Step-5-7: preparedStatementよりSQL(SELECT文)を実行し、resultSetへ結果を格納しなさい。
                     ps.executeUpdate();
